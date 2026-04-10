@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Post Your Resume</title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+body{
+font-family: Arial;
+background:#f4f6fb;
+margin:0;
+}  
+
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin-bottom: 30px;
+text-align: center;
+margin: 0;
+}
+
+
+.header{
+background:#0d6efd;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.container{
+width:400px;
+margin:40px auto;
+background:white;
+padding:30px;
+border-radius:8px;
+box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+
+h2{
+text-align:center;
+color:#0d6efd;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#0d6efd;
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#084298;
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <header>
+
+<div class="logo">
+<img src="images/logo1.jpeg" alt="Company Logo">
+<h1>Dhurudheekshitha Multi Services Pvt.Ltd.,</h1>
+</div>
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+<nav id="navMenu">
+<a href="index.html">Home</a>
+<a href="Aboutus.html">About us</a>
+<a href="services.html">Services</a>
+<a href="Segmentation.html">Segmentation</a>
+<a href="Gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+<a href="Resume.html">Resume</a>
+</nav>
+
+</header>
+
+<div class="header">
+<h1>Post Your Resume</h1>
+<p>Apply for Jobs</p>
+</div>
+
+<div class="container">
+
+<h2>Apply Now</h2>
+
+<form id="resumeForm">
+
+<input type="text" id="Name" placeholder="Your Name" required>
+
+<input type="tel" id="Phone" placeholder="Mobile Number" required>
+
+<input type="email" id="Email" placeholder="Email Address" required>
+
+<input type="text" id="City" placeholder="City">
+
+<input type="text" id="Subject" placeholder="Subject">
+
+<label>Upload Resume</label>
+<input type="file" id="resume">
+
+<button type="submit">Apply Now</button>
+
+</form>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+<script src="index.js"></script>
+<script>
+
+function toggleMenu(){
+var menu = document.getElementById("navMenu");
+
+if(menu.style.display === "block"){
+menu.style.display = "none";
+}else{
+menu.style.display = "block";
+}
+
+}
+
+</script>
+
+</body>
+</html>

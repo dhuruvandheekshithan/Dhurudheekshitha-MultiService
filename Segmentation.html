@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Segmentation Layout</title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin-bottom: 30px;
+text-align: center;
+margin: 0;
+}
+
+body{
+font-family: Arial;
+margin:0;
+background:#f4f6fb;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+padding:40px 0;
+}
+
+h2{
+text-align:center;
+color:#0d6efd;
+margin-bottom:30px;
+}
+
+.segment-row{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.segment{
+flex:1 1 250px;
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.segment h3{
+color:#0d6efd;
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <header>
+
+<div class="logo">
+<img src="images/logo1.jpeg" alt="Company Logo">
+<h1>Dhurudheekshitha Multi Services Pvt.Ltd.,</h1>
+</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+<nav id="navMenu">
+<a href="index.html">Home</a>
+<a href="Aboutus.html">About us</a>
+<a href="services.html">Services</a>
+<a href="Segmentation.html">Segmentation</a>
+<a href="Gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+<a href="Resume.html">Resume</a>
+</nav>
+
+</header>
+
+<div class="container">
+
+<h2>Our Segments</h2>
+
+<div class="segment-row">
+
+<div class="segment">
+<h3>Corporate Services</h3>
+<p>Professional services for offices and corporate companies.</p>
+</div>
+
+<div class="segment">
+<h3>Residential Services</h3>
+<p>Cleaning, security and maintenance services for homes.</p>
+</div>
+
+<div class="segment">
+<h3>Industrial Services</h3>
+<p>Facility management and support for industries.</p>
+</div>
+
+<div class="segment">
+<h3>Commercial Services</h3>
+<p>Services for malls, shops and commercial buildings.</p>
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function toggleMenu(){
+var menu = document.getElementById("navMenu");
+
+if(menu.style.display === "block"){
+menu.style.display = "none";
+}else{
+menu.style.display = "block";
+}
+
+}
+
+</script>
+
+</body>
+</html>

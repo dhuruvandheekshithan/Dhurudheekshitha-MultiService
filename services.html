@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Services</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background: aquamarine;
+}
+
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:rgb(117, 119, 19);
+color:white;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:60px;
+}
+
+.logo h1{
+font-size:20px;
+margin:0;
+}
+
+/* NAV */
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+font-size:16px;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+/* TITLE */
+
+h2{
+text-align:center;
+font-size:32px;
+margin-top:40px;
+}
+
+/* SERVICES GRID */
+
+.services{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+padding:20px;
+}
+
+.service-box{
+width:250px;
+border:1px solid #ddd;
+padding:15px;
+margin:12px;
+background:white;
+border-radius:8px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+text-align:center;
+transition:0.3s;
+}
+
+.service-box:hover{
+transform:translateY(-5px);
+}
+
+.service-box img{
+width:100%;
+height:150px;
+object-fit:cover;
+border-radius:5px;
+}
+
+.service-box h3{
+margin-top:10px;
+}
+
+/* BUTTON */
+
+button{
+background:#007bff;
+color:white;
+border:none;
+padding:8px 15px;
+cursor:pointer;
+border-radius:4px;
+margin-top:8px;
+}
+
+button:hover{
+background:#0056b3;
+}
+
+/* SERVICE DETAILS */
+
+#serviceDetails{
+margin:30px auto;
+max-width:700px;
+border:1px solid #ddd;
+padding:20px;
+display:none;
+background:white;
+border-radius:8px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="images/logo1.jpeg">
+<h1>Dhurudheekshitha Multi Services Pvt.Ltd.,</h1>
+</div>
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+<nav id="navMenu">
+<a href="index.html">Home</a>
+<a href="Aboutus.html">About us</a>
+<a href="services.html">Services</a>
+<a href="Segmentation.html">Segmentation</a>
+<a href="Gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<h2>Our Services</h2>
+
+<br> <br>
+
+<div class="services1">
+
+<div class="service1-box">
+<img src="images/con1.png">
+<h3>Contract Labour Supply</h3>
+<button onclick="toggleDetails(this)">More</button>
+<div class="service1-details">
+Providing skilled and unskilled contract labour for industries, factories and construction projects.
+</div>
+</div>
+
+<div class="service1-box">
+<img src="images/car2.png">
+<h3>Catering & Food Court</h3>
+<button onclick="toggleDetails(this)">More</button>
+<div class="service1-details">
+Complete catering services for companies, factories, offices and events.
+</div>
+</div>
+
+<div class="service1-box">
+<img src="images/kit3.png">
+<h3>Kitchen Projects</h3>
+<button onclick="toggleDetails(this)">More</button>
+<div class="service1-details">
+Industrial kitchen setup, equipment installation and maintenance services.
+</div>
+</div>
+
+<div class="service1-box">
+<img src="images/pantry.jpeg">
+<h3>Pantry Services</h3>
+<button onclick="toggleDetails(this)">More</button>
+<div class="service1-details">
+Office pantry management including tea, coffee and refreshment services.
+</div>
+</div>
+
+<div class="service1-box">
+<img src="images/services icons.png">
+<h3>Housekeeping & Hygiene</h3>
+<button onclick="toggleDetails(this)">More</button>
+<div class="service1-details">
+Professional housekeeping services for offices, hospitals and industries.
+</div>
+</div>
+
+<div class="service1-box">
+<img src="images/sec.png">
+<h3>Security Services</h3>
+<button onclick="toggleDetails(this)">More</button>
+<div class="service1-details">
+Trained security guards for companies, apartments and commercial properties.
+</div>
+</div>
+
+<div class="service1-box">
+<img src="images/land.png">
+<h3>Gardening & Landscaping</h3>
+<button onclick="toggleDetails(this)">More</button>
+<div class="service1-details">
+Garden maintenance, landscaping and lawn care services.
+</div>
+</div>
+
+<div class="service1-box">
+<img src="images/cel.jpeg">
+<h3>Event Management & Celebrations</h3>
+<button onclick="toggleDetails(this)">More</button>
+<div class="service1-details">
+Complete event planning and celebration management services.
+</div>
+</div>
+
+<div class="service1-box">
+<img src="images/past.png">
+<h3>Pest Control Service</h3>
+<button onclick="toggleDetails(this)">More</button>
+<div class="service1-details">
+Control of termites, mosquitoes, cockroaches and other pests.
+</div>
+</div>
+
+<div class="service1-box">
+<img src="images/czr.jpeg">
+<h3>Car Washing & Maintenance</h3>
+<button onclick="toggleDetails(this)">More</button>
+<div class="service1-details">
+Vehicle cleaning and maintenance services for companies and fleets.
+</div>
+</div>
+
+<div class="service1-box">
+<img src="images/tre.jpeg">
+<h3>Guest House & Hostel Services</h3>
+<button onclick="toggleDetails(this)">More</button>
+<div class="service1-details">
+Management and maintenance of guest houses and hostel facilities.
+</div>
+</div>
+
+<div class="service1-box">
+<img src="images/dek.jpeg">
+<h3>Transportation & Courier Desk</h3>
+<button onclick="toggleDetails(this)">More</button>
+<div class="service1-details">
+Transport coordination and courier management for companies.
+</div>
+</div>
+
+<div class="service1-box">
+<img src="images/off.png">
+<h3>Front Office & Office Admin</h3>
+<button onclick="toggleDetails(this)">More</button>
+<div class="service1-details">
+Reception, front office and administrative support services.
+</div>
+</div>
+
+<div class="service1-box">
+<img src="images/cl.png">
+<h3>OTC – One Time Cleaning</h3>
+<button onclick="toggleDetails(this)">More</button>
+<div class="service1-details">
+Professional one-time deep cleaning services for buildings and offices.
+</div>
+</div>
+
+<div class="service1-box">
+<img src="images/clen.png">
+<h3>Tank & Cobweb Cleaning</h3>
+<button onclick="toggleDetails(this)">More</button>
+<div class="service1-details">
+Water tank cleaning and cobweb removal for buildings and factories.
+</div>
+</div>
+
+<div class="service1-box">
+<img src="images/pro.jpeg">
+<h3>Property Management</h3>
+<button onclick="toggleDetails(this)">More</button>
+<div class="service1-details">
+Complete property management services for commercial and residential spaces.
+</div>
+</div>
+
+<div class="service1-box">
+<img src="images/buy.jpeg">
+<h3>Company Scrap Buying</h3>
+<button onclick="toggleDetails(this)">More</button>
+<div class="service1-details">
+Buying company scrap materials such as metal, machinery and industrial waste.
+</div>
+</div>
+
+<div class="service1-box">
+<img src="images/load.jpeg">
+<h3>Loading & Unloading</h3>
+<button onclick="toggleDetails(this)">More</button>
+<div class="service1-details">
+Professional loading and unloading manpower for warehouses, factories and transport companies.
+</div>
+</div>
+
+</div>
+
+<div id="serviceDetails1"></div>
+<script>
+
+function showService(service){
+
+if(service == "housekeeping"){
+alert("House Keeping Service: Office, Hospital, Factory cleaning services.");
+}
+
+else if(service == "pest"){
+alert("Pest Control Service: Mosquito, termite, cockroach control.");
+}
+
+else if(service == "security"){
+alert("Security Services: Professional security guards for companies.");
+}
+
+else if(service == "manpower"){
+alert("Manpower Supply: Skilled and unskilled workers.");
+}
+
+else if(service == "office"){
+alert("Office Support: Office assistant and helper services.");
+}
+
+else if(service == "industrial"){
+alert("Industrial Cleaning: Factory and industrial cleaning services.");
+}
+
+else if(service == "building"){
+alert("Building Maintenance: Building repair and maintenance.");
+}
+
+else if(service == "electrical"){
+alert("Electrical Maintenance: Electrical repair and maintenance.");
+}
+
+else if(service == "plumbing"){
+alert("Plumbing: Pipe repair and plumbing services.");
+}
+
+else if(service == "garden"){
+alert("Garden Maintenance: Garden cleaning and landscaping.");
+}
+
+else if(service == "waste"){
+alert("Waste Management: Garbage collection and waste disposal.");
+}
+
+else if(service == "deep"){
+alert("Deep Cleaning: Full building deep cleaning service.");
+}
+
+else if(service == "facade"){
+alert("Facade Cleaning: Glass and building exterior cleaning.");
+}
+
+else if(service == "carpet"){
+alert("Carpet Cleaning: Carpet washing and cleaning.");
+}
+
+else if(service == "facility"){
+alert("Facility Management: Complete facility management service.");
+}
+
+}
+
+</script>
+
+
+<script src="index.js"></script>
+
+<script>
+
+function toggleMenu(){
+var menu = document.getElementById("navMenu");
+
+if(menu.style.display === "block"){
+menu.style.display = "none";
+}else{
+menu.style.display = "block";
+}
+
+}
+
+</script>
+
+<footer>
+  <p>Copyrights © 2026 Dhuruvadheekshitha Multi Services Pvt.Ltd. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

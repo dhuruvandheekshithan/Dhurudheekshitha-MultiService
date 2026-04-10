@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Contact Us</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="images/logo1.jpeg" alt="Company Logo">
+<h2>Dhuruvadheekshitha Multi Services Pvt. Ltd.</h2>
+</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+<nav id="navMenu">
+<a href="index.html">Home</a>
+<a href="Aboutus.html">About Us</a>
+<a href="services.html">Services</a>
+<a href="Segmentation.html">Segmentation</a>
+<a href="Gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+<a href="Resume.html">Resume</a>
+</nav>
+
+</header>
+
+
+<section class="contact-section">
+
+<h2>Contact Us</h2>
+
+<div class="contact-card">
+
+<!-- Left Contact Info -->
+<div class="contact-left">
+
+<h3>Get In Touch</h3>
+
+<p>📍 Madurai, Tamil Nadu</p>
+<p>📞 +91 96266 59957</p>
+<p>📞 +91 96266 59946</p>
+<p>📧 dhuruvandheekshithan@gmail.com</p>
+<p>📧 hr.dhuruvadheekshithan@gmail.com</p>
+
+</div>
+
+
+<!-- Contact Form -->
+<div class="contact-right">
+
+<h3>Make An Appointment</h3>
+
+<form id="contactForm">
+
+<input type="text" id="name" placeholder="Name" required>
+
+<input type="email" id="email" placeholder="Email" required>
+
+<input type="text" id="phone" placeholder="Mobile Number" required>
+
+<select id="service" required>
+<option value="">Select Service</option>
+
+<option value="Contract Labour Supply">Contract Labour Supply</option>
+<option value="Catering & Food Court">Catering & Food Court</option>
+<option value="Kitchen Projects">Kitchen Projects</option>
+<option value="Pantry Services">Pantry Services</option>
+<option value="Housekeeping">Housekeeping & Hygiene</option>
+<option value="Security">Security Services</option>
+<option value="Gardening">Gardening & Landscaping</option>
+<option value="Event Management">Event Management</option>
+<option value="Pest Control">Pest Control</option>
+<option value="Car Washing">Car Washing</option>
+<option value="Property Management">Property Management</option>
+
+</select>
+
+<textarea id="message" placeholder="Message"></textarea>
+
+<!-- Captcha 
+<div class="captcha-box">
+
+<p id="mathQuestion"></p>
+
+<input type="number" id="captchaAnswer" placeholder="Enter Answer" required>
+
+</div>
+-->
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+<p>Copyright © 2026 Dhuruvadheekshitha Multi Services Pvt. Ltd. All Rights Reserved.</p>
+</footer>
+
+
+<!-- Firebase Scripts -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+<!-- Your JS File -->
+<script src="index.js"></script>
+
+<script>
+
+function toggleMenu(){
+var menu = document.getElementById("navMenu");
+
+if(menu.style.display === "block"){
+menu.style.display = "none";
+}else{
+menu.style.display = "block";
+}
+
+}
+
+</script>
+
+
+</body>
+</html>

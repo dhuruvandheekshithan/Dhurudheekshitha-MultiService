@@ -91,7 +91,15 @@ font-size:16px;
 }
 
 /* hamburger icon */
-@media (max-width:768px){
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+color:white;
+}
+
+/* Mobile மட்டும் */
+@media(max-width:768px){
 
 .menu-toggle{
 display:block;
@@ -466,6 +474,10 @@ body{
 font-family: Arial;
 margin:0;
 background:#f4f6f9;
+height: 100%;
+margin: 0;
+display: flex;
+flex-direction: column;
 }
 
 
@@ -697,10 +709,15 @@ button {
   border: none;
 }
 
-footer {
-  background: rgb(117, 119, 19);
-  color: white;
-  padding: 20px;
+footer{
+background:#6b6f0b;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+.container{
+flex:1;
 }
 
 .contact-section{
@@ -836,3 +853,4 @@ padding:10px;
 }
 
 }
+
